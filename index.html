@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./accest/css/style.css">
+    <link rel="shortcut icon" href="./accest/img/logo/image 2.png" type="image/png">
+    <title>Capybara Bank</title>
+</head>
+<body>
+    <header>
+        <div class="heаder-wrapper container">
+            <div class="header-logo">
+                <img src="./accest/img/logo/image 2.png" alt="">
+                <p>Capybara<br>Bank</p>
+            </div>
+            <div class="header-button">
+                <div class="head-but"><a href="#" class="but1">Частным лицам</a></div>
+                <div class="head-but"><a href="#" class="but2">Бизнесу</a></div>
+                <div class="head-but"><a href="#" class="but3">Ещё</a></div>
+            </div>
+            <div class="header-login">
+                <p>Личный кабинет</p>
+                <img src="./accest/img/img/login.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner-wrapper container">
+                <div class="banner-content ">
+                    <div class="container-banner">
+                        <div class="banner-logo">
+                            <img src="./accest/img/logo/image 2.png" alt="">
+                            <p>Capybara<br>Bank</p>
+                        </div>
+                        <h1>Ипотека</h1>
+                        <p>Одна заявка на все ипотечные программы Capybara Bank</p>
+                        <button class="but-banner1">Подать заявку</button>
+                        <button class="but-banner2">Рассчитать условия</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="programs">
+            <p>Программы ипотеки</p>
+            <div class="program-wrapper container">
+                <div class="program1">
+                    <h1>Ипотека на вторичное жилье</h1>
+                    <p>Максимальная сумма 50 млн рублей</p>
+                    <p>Полная стоимость кредита 14-20%</p>
+                    <p>Ставка от 14%</p>
+                    <p>Срок кредитования до 30 лет</p>
+                    <a href="#"> Подробнее</a>
+                </div>
+                <div class="program2">
+                    <h1>Ипотека на вторичное жилье</h1>
+                    <p>Максимальная сумма 50 млн рублей</p>
+                    <p>Полная стоимость кредита 14-20%</p>
+                    <p>Ставка от 14%</p>
+                    <p>Срок кредитования до 30 лет</p>
+                    <a href="#"> Подробнее</a>
+                </div>
+            </div>
+        </section>
+        <section class="conditions">
+            <h1 class="texttt">Рассчитай условия</h1>
+            <div class="conditions-wrapper container">
+                <div class="block-main">
+                    <div class="block1">
+                        <div class="main-condition">
+                            <h1>Рассчитайте примерный платеж</h1>
+                            <div class="type-of-accommodation">
+                                <button onclick="myFunction()" class="type-of-accommodation-button">
+                                    <span class="title-type">
+                                        <span class="title-type">
+                                            <span class="type">Тип программы</span>
+                                        </span>
+                                        <span class="accommadation">Вторичное жилье</span>
+                                    </span>
+                                    <span class="button">
+                                        <script>
+                                            document.querySelector(".type-of-accommodation-button").addEventListener("click", function(e) {
+                                            this.classList.toggle("active");
+                                            });
+                                        </script>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="price-wrapper">
+                            <div class="price-house">
+                                <span class="price-title">
+                                    <span class="title-p">Цена недвижимости, ₽</span>
+                                    <span class="price">
+                                        <input type="number" autocomplete="off" inputmode="numeric" value="3500000">
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="first-price">
+                                <span class="first-title">
+                                    <span class="title-f">Первый взнос, ₽</span>
+                                    <span class="first">
+                                        <input type="number" autocomplete="off" inputmode="numeric" value="1000000">
+                                    </span>
+                                </span>
+                                <div class="precent">28,5%</div>
+                            </div>
+                        </div>
+                        <div class="loan-tern-wrapper">
+                            <div class="loan-tern">
+                                    <span class="title-tern">
+                                        <span class="loan">Тип программы</span>
+                                        <span class="years" id="rangeValue">15</span>
+                                        <input type="range" min="1" max="30" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList">
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block2">
+                        <div class="conclusion1">
+                            <div class="conclusion">
+                                <span class="title-gray">Диапазон ПСК</span>
+                                <span class="title-blue">21,5%-24,5%</span>
+                            </div>
+                            <div class="conclusion">
+                                <span class="title-gray">Ежемесячный платёж</span>
+                                <span class="title-black">41 616 ₽</span>
+                            </div>
+                            <div class="conclusion">
+                                <span class="title-gray">Налоговый вычет</span>
+                                <span class="title-black">650 000 ₽</span>
+                            </div>
+                        </div>
+                        <div class="conclusion2">
+                            <div class="conclusion">
+                                <span class="title-gray">Процентная ставка</span>
+                                <span class="title-blue">19,6%</span>
+                            </div>
+                            <div class="conclusion">
+                                <span class="title-gray">Сумма кредита</span>
+                                <span class="title-black">2 500 000 ₽</span>
+                            </div>
+                            <div class="conclusion">
+                                <span class="title-gray">Необходимый доход</span>
+                                <span class="title-black">57 334 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-dop">
+                    <div class="block3">
+                        <h1 class="contact-info">Контакная информация</h1>
+                        <div class="name-int">
+                            <input type="text" class="name" placeholder="Фамилия, Имя, Отчество*">
+                        </div>
+                        <div class="main-date">
+                            <div class="number-date">
+                                <input type="text" placeholder="Номер телефона*">
+                            </div>
+                            <div class="number-date">
+                                <input type="text" placeholder="Дата рождения*">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block4">
+                        <button class="grafic">График платежей</button>
+                        <button class="application">Подать заявку</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="FAQ">
+            <div class="FAQ-wrapper container">
+                <h3>Часто задаваемые вопросы по ипотеке</h3>
+                <div class="FAQ-button">
+                    <div class="FAQ">
+                        <p>Что такое ипотека</p>
+                        <p>↓</p>
+                    </div>
+                    <div class="FAQ">
+                        <p>Какие документы нужны для оформления ипотеки?</p>
+                        <p>↓</p>
+                    </div>
+                    <div class="FAQ">
+                        <p>Как рассчитать условия кредита и сумму платежа в месяц?</p>
+                        <p>↓</p>
+                    </div>
+                    <div class="FAQ">
+                        <p>Какой залог нужен для получения ипотечного кредита?</p>
+                        <p>↓</p>
+                    </div>
+                    <div class="FAQ">
+                        <p>Какие документы нужны для оформления ипотеки?</p>
+                        <p>↓</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="foote-wrapper container">
+            <div class="logo-footer">
+                <img src="./accest/img/logo/whitelogo.png" alt="">
+                <p>Capybara<br>Bank</p>
+            </div>
+            <div class="contact-news-footer">
+                <div class="new">
+                    <div class="new1">
+                        <p>О банке</p>
+                        <p>Курсы валют</p>
+                        <p>Курсы металлов</p>
+                    </div>
+                    <div class="new1">
+                        <p>Блог</p>
+                        <p>Работа</p>
+                        <p>For investors</p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <p>8 800 000 00 00- Частным лицам</p>
+                    <h4>8 000 000 00 01- Бизнесу</h4>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="massenger">
+                <p>© GARIPOV ANVAR</p>
+                <div class="mass-icon">
+                    <img src="./accest/img/img/free-icon-telegram-739260 2.png" alt="">
+                    <img src="./accest/img/img/free-icon-whatsapp-1077055 2.png" alt="">
+                    <img src="./accest/img/img/free-icon-instagram-1384031 2.png" alt="">
+                    <img src="./accest/img/img/free-icon-vk-2111828 2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

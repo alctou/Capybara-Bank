@@ -1,0 +1,1000 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+:root{
+    --main-font: "Roboto", sans-serif;
+    --maim-white: #ffffff;
+    --maim-black: #000000;
+    --main-blue: #3CACDC;
+    --main-gray: #6b6b6b;
+}
+
+footer{
+    background-color: #292929;
+    margin-top: 103px;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+.container-banner{
+    width: 450px;
+    margin: 0 auto;
+}
+.heаder-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 0;
+}
+/* логотип */
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+/* Кнопки header */
+.header-button{
+    display: flex;
+    gap: 35px;
+}
+.header-button a{
+    text-decoration: none;
+    color: var(--maim-black);
+    font-size: 18px;
+    font-weight: 400;
+}
+.header-button:has(.but1:hover) .but2 {
+    color: gray;
+}
+.header-button:has(.but1:hover) .but3 {
+    color: gray;
+}
+.header-button:has(.but2:hover) .but1 {
+    color: gray;
+}
+.header-button:has(.but2:hover) .but3 {
+    color: gray;
+}
+.header-button:has(.but3:hover) .but1 {
+    color: gray;
+}
+.header-button:has(.but3:hover) .but2 {
+    color: gray;
+}
+/* Кнопка профиля */
+.header-login{
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+    font-weight: 400;
+    color: #137CDD;
+    cursor: pointer;
+}
+/* баннер */
+.banner{
+    background-image: url(../img/banner/Group\ 12.png);
+    background-repeat: no-repeat;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    height: 350px;
+    background-color: var(--maim-white);
+
+
+    border-radius: 20px;
+}
+.banner-wrapper{
+    padding: 134px 0;
+}
+.banner-logo{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 18px 0;
+    
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.banner-logo p{
+    font-size: 18px;
+    font-weight: 700;
+}
+.banner-content h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.banner-content {
+    margin-top: 10px;
+
+    font-size: 16px;
+    font-weight: 400;
+}
+.but-banner1{
+    background-color: var(--main-blue);
+    width: 450px;
+    height: 55px;
+    margin-top: 29px;
+    border-radius: 5px;
+    border: none;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--maim-white);
+}
+.but-banner2{
+    width: 450px;
+    height: 51px;
+    margin-top: 15px;
+    border: 1px solid var(--maim-black);
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+/* Программы ипотеки */
+.programs{
+    margin-top: 97px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    font-size: 44px;
+    font-weight: 600;
+}
+.program-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.program1{
+    background-image: url(../img/img/program1.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    width: 530px;
+    height: 490px;
+    border: 1px solid black;
+    border-radius: 28px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+}
+.program1 h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 35px;
+}
+.program1 p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.program1 a{
+    text-decoration: none;
+    padding: 11px 18px;
+    background-color: var(--maim-white);
+    color: var(--maim-black);
+    margin-top: 182px;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.program2{
+    background-image: url(../img/img/program2.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    width: 530px;
+    height: 490px;
+    border: 1px solid black;
+    border-radius: 28px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+}
+.program2 h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 35px;
+}
+.program2 p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.program2 a{
+    text-decoration: none;
+    padding: 11px 18px;
+    background-color: var(--maim-white);
+    color: var(--maim-black);
+    margin-top: 182px;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Расчет условий */
+/* тип жилья */
+.type-of-accommodation{
+    width: 540px;
+    height: 56px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-top: 11px;
+}
+.type-of-accommodation-button{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 9px 23px;
+    width: 494px;
+    height: 43px;
+    background-color: transparent;
+    border: none;
+}
+.title-type{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.type{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--main-gray);
+}
+.accommadation{
+    margin-top: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--maim-black);
+}
+
+
+.type-of-accommodation-button::after {
+    content: "▾";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    font-size: 30px;
+}
+  
+.type-of-accommodation-button.active::after {
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(180deg);
+}
+
+/* цена */
+
+.price-wrapper{
+    display: flex;
+    gap: 20px;
+}
+
+.price-house{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 260px;
+}
+.price-title{
+    display: flex;
+    flex-direction: column; 
+    gap: 7px;
+    
+    padding: 8px 0 8px 23px ;
+}
+.title-p{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--main-gray);
+}
+.price{
+    font-size: 15px;
+    font-weight: 600;
+}
+.price input{
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+.price input:focus{
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+/* первый взнос */
+.first-price{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 260px;
+    display: flex;
+}
+.first-title{
+    display: flex;
+    flex-direction: column; 
+    gap: 7px;
+    
+    padding: 8px 0 8px 23px ;
+}
+.title-f{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--main-gray);
+}
+.first{
+    font-size: 15px;
+    font-weight: 600;
+}
+.first input{
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+.first input:focus{
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.precent{
+    margin-top: 34px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* срок кредита */
+
+.loan-tern{
+    width: 540px;
+    height: 56px;
+    border: 1px solid black;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.title-tern{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+    padding: 8px 0 0 23px;
+}
+
+.loan{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--main-gray);
+
+}
+.years{
+    font-size: 15px;
+    font-weight: 600;
+}
+.loan-tern input{
+    width: 497px;
+    margin-top: -7px;
+}
+.block1{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    padding: 77px 0 0 63px;
+}
+.conditions-wrapper{
+    width: 1100px;
+    border: 1px solid black;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    margin-top: 40px;
+}
+.block2{
+    width: 354px;
+    height: 204px;
+    display: flex;
+    gap: 30px;
+    margin: 132px 75px 0 0;
+}
+.conclusion{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title-gray{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--main-gray);
+}
+.title-blue{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--main-blue);
+}
+.title-black{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--maim-black);
+}
+.conclusion1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.conclusion2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.main-condition h1{
+    font-size: 28px;
+    font-weight: 500;
+}
+.block-main{
+    display: flex;
+    gap: 79px;
+}
+.contact-info{
+    font-size: 24px;
+    font-weight: 600;
+}
+.name-int input:focus{
+    outline: none;
+}
+.name-int{
+    width: 540px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+.name-int input{
+    border: none;
+    width: 400px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 0 0 15px;
+}
+.number-date{
+    width: 260px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+.number-date input{
+    border: none;
+    width: 200px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 0 0 15px;
+}
+.number-date input:focus{
+    outline: none;
+}
+.main-date{
+    display: flex;
+    gap: 20px;
+}
+.block3{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    padding: 44px 0 66px 63px;
+}
+
+.grafic{
+    width: 350px;
+    height: 55px;
+    border: 1px solid black;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+.application{
+    width: 350px;
+    height: 55px;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--main-blue);
+    color: white;
+}
+.block-dop{
+    display: flex;
+    gap: 79px;
+}
+.block4{
+    display: flex;
+    flex-direction: column;
+    margin-top: 91px;
+    gap: 17px;
+}
+.texttt{
+    text-align: center;
+    font-size: 44px;
+    font-weight: 600;
+    margin-top: 91px;
+}
+.FAQ{
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.FAQ p{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 39px 37px;
+}
+.FAQ-wrapper h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin-top: 87px;
+    text-align: center;
+}
+.FAQ-button{
+    margin-top: 20px;
+}
+.logo-footer{
+    display: flex;
+    gap: 7px;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--maim-white);
+    align-items: center;
+}
+.contact-news-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.new{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--maim-white);
+}
+.new1{
+    display: flex;
+    gap: 30px;
+
+    justify-content: left;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: end;
+}
+.contact h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--maim-white);
+}
+.contact p{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--maim-white);
+}
+.line{
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    margin-top: 31px;
+}
+.massenger{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--maim-white);
+}
+.mass-icon{
+    display: flex;
+    gap: 14px;
+}
+.foote-wrapper{
+    padding: 32px 0;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      -webkit-appearance: none;
+      background-color: var(--main-blue);
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 3px;
+      -webkit-appearance: none;
+      color: var(--maim-black);
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 15px;
+      -webkit-appearance: none;
+      height: 15px;
+      border-radius: 50%;
+      cursor: ew-resize;
+      background: var(--main-blue);
+      margin-top: -6px;
+    }
+
+}
+@media (max-width: 1100px) {
+    .heаder-wrapper{
+        justify-content: center;
+        gap: 80px;
+        margin: 0px;
+        width: 1000px;
+    }
+    .container{
+        width: 950px;
+    }
+    .banner-wrapper{
+    background-image: url(../img/img/Rectangle\ 3.png);
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    width: 1000px;
+    }
+    .program-wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap:30px;
+        padding: 0;
+        width: 800px;
+    }
+    .block-main{
+        gap: 30px;
+    }
+    .block1{
+        padding: 0;
+        margin-top: 30px;
+    }
+    .block2{
+        padding: 0;
+        margin-top: 80px;
+    }
+    .title-gray{
+        width: 200px;
+    }
+    .block-dop{
+        gap: 30px;
+    }
+    .block3{
+        padding: 0 0 20px 0;
+
+    }
+    .block4{
+        padding: 0;
+        margin-top: 60px;
+    }
+    .conditions-wrapper{
+        padding:0 30px;
+        width: 1000px;
+    }
+    .foote-wrapper{
+        margin: 0px;
+    }
+    .contact-news-footer{
+        display: flex;
+        justify-content: center;
+    }
+    .massenger{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 1000px) {
+    .block-main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .block-dop{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .conditions-wrapper{
+        width: 700px;
+    }
+    .block2{
+        margin-top: 0px;
+    }
+    .block3{
+        display: none;
+    }
+    .block4{
+        margin-top: 0px;
+        padding: 0 0 30px 0;
+    }
+    .container{
+        padding: 0 100px;
+        width: 800px;
+    }
+    .line{
+        width: 500px;
+    }
+    .progarm{
+        width: 600px;
+    }
+
+    .header-button{
+        display: none;
+    }
+    .new{
+        display: none;
+    }
+    .massenger{
+        flex-direction: column-reverse;
+    }
+    .heаder-wrapper{
+        margin: 0px;
+    }
+    .foote-wrapper{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact{
+
+    }
+}
+@media (max-width: 450px) {
+    .container{
+        width: 350px;
+    }
+    .header-logo p{
+        display: none;
+    }
+    .header-login p{
+        display: none;
+    }
+    .banner-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .banner-content{
+        width: 350px;
+        height: 305px;
+        
+    }
+    .container-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height: 305px;
+        padding: 0 44px;
+        text-align: center;
+    }
+    .container-banner h1{
+        font-size: 24px;
+    }
+    .container-banner p{
+        font-size: 16px;
+    }
+    .container-banner button{
+        width: 262px;
+        height: 44px;
+    }
+    .conditions h1{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .conditions-wrapper{
+        margin-top: 30px;
+    }
+    .programs{
+        font-size: 22px;
+        margin-top: 20px;
+    }
+    .program-wrapper{
+        margin-top: 14px;
+        width: 350px;
+    }
+    .program1{
+        width: 350px;
+        height: 424px;
+        gap: 15px;
+    }
+    .program1 h1{
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 27px;
+    }
+    .program1 p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .program1 a{
+        text-decoration: none;
+        padding: 11px 18px;
+        background-color: var(--maim-white);
+        color: var(--maim-black);
+        margin-top: 164px;
+        border-radius: 7px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .program2{
+        width: 350px;
+        height: 424px;
+        gap: 15px;
+    }
+    .program2 h1{
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 27px;
+    }
+    .program2 p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .program2 a{
+        text-decoration: none;
+        padding: 11px 18px;
+        background-color: var(--maim-white);
+        color: var(--maim-black);
+        margin-top: 164px;
+        border-radius: 7px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .conditions{
+        font-size: 22px;
+    }
+    .type-of-accommodation{
+        width: 312px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    .price-wrapper{
+        flex-direction: column;
+    }
+    .type-of-accommodation-button{
+        width: 280px;
+        display: flex;
+    }
+    .main-condition{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .price-house{
+        width: 312px;
+        border-radius: 5px;
+    }
+    .first-price{
+        width: 312px;
+        border-radius: 5px;
+    }
+    .loan-tern{
+        width: 312px;
+        border-radius: 5px;
+    }
+    .loan-tern input{
+        width: 270px;
+        margin-top: -7px;
+    }
+    .conditions-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height: 730px;
+        border-radius: 11px;
+    }
+    .block1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 11px;
+    }
+    .block2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .title-gray{
+        font-size: 12px;
+    }
+    .price-wrapper{
+        gap: 11px;
+    }
+    .title-blue{
+        font-size: 16px;
+    }
+    .title-black{
+        font-size: 16px;
+    }
+    .block2{
+        gap: 10px;
+    }
+    .title-gray{
+        width: 140px;
+    }
+    .block4 button{
+        width: 312px;
+    }
+    .block-main{
+        gap: 31px;
+    }
+    .FAQ{
+        width: 350px;
+    }
+    .programs{
+        width: 350px;
+    }
+    .FAQ-button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .FAQ-button p{
+        font-size: 12px;
+    }
+    .FAQ p{
+        padding: 9px 18px;
+    }
+}
