@@ -140,6 +140,13 @@ footer{
     font-size: 14px;
     font-weight: 500;
     color: var(--maim-white);
+    cursor: pointer;
+}
+.but-banner1:hover{
+    background-color: #137CDD;
+}
+.application:hover{
+    background-color: #137CDD;
 }
 .but-banner2{
     width: 450px;
@@ -150,6 +157,17 @@ footer{
 
     font-size: 14px;
     font-weight: 500;
+    cursor: pointer;
+}
+.but-banner2:hover{
+    background-color: #292929;
+    border: none;
+    color: var(--maim-white);
+}
+.grafic:hover{
+    background-color: #292929;
+    border: none;
+    color: var(--maim-white);
 }
 /* Программы ипотеки */
 .programs{
@@ -639,6 +657,15 @@ input::-webkit-inner-spin-button {
 }
 .foote-wrapper{
     padding: 32px 0;
+}
+.logo-footer{
+    cursor: pointer;
+}
+.new{
+    cursor: pointer;
+}
+.mass-icon{
+    cursor: pointer;
 }
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     input[type='range'] {
